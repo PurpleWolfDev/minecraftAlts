@@ -11,8 +11,8 @@ var emailsender = mailer.createTransport({
     secure : false,
     requireTLS: true,
     auth :{
-        user : "purplefoxdevs@gmail.com",
-        pass : "Shaguftanaz@12345"
+        user : "youremail@gmail.com",
+        pass : "your password"
     }
 });
 const bodyParser = require("body-parser");
@@ -20,7 +20,7 @@ app.listen(port, () => {
     console.log("Server Started!");
 });
 
-const DB = "mongodb+srv://snips:snips@cluster0.hscsw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const DB = "your mongodb url";
 mongoose.connect(DB).then(() => {
 	console.log("CONNECTED TO DB");
 }).catch(err => console.log(err));
